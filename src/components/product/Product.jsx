@@ -3,26 +3,28 @@ import { useState } from 'react';
 import '../../styles/components/product.css';
 import { useRouter } from 'next/navigation';
 
-const Product=({img,title,price})=> {
+const Product=({img,title,text,price,link})=> {
     return (
         <section className='sectionProduct'>
             <div className='containerProduct'>
-                <div className='imgProduct'>
-                    <img src={img}  alt=""></img>
-                </div>
-                <div className='bodyProduct'>
-                    <div className='textProduct' >
-                        <h2>{title}</h2>
+                <a href='/productsite' target='_blank'>
+                    <div className='imgProduct'>
+                        <img src={img}  alt=""></img>
                     </div>
-                    <div className='priceProduct'>
-                        <h3>{price}</h3>
+                    <div className='bodyProduct'>
+                        <div className='textProduct' >
+                            <h2>{title}</h2>
+                        </div>
+                        <div className='text2Product' >
+                            <h3>{text}</h3>
+                        </div>
+                        <div className='priceProduct'>
+                            <h3>{price}</h3>
+                        </div>
                     </div>
-                    <div className='buttonProduct'>
-                        <button type="button" class="custom-btn btn-1">Comprar</button>
-                        <button type="button" class="custom-btn btn-1">Lista de deseos</button>
-                    </div>
-                </div>
+                </a>
             </div>
+            
         </section>
 );
 }
