@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sectionProduct{
+    display: flex;
+    padding: 2rem;
+}
+.containerProduct{
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    width: 277.5px;
+    
+}
+.containerProduct img{
+    margin: 10px;
+}
+.bodyProduct{
+    gap: 0rem;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.imgProduct{
+    align-items: center;
+}
+.imgProduct img{
+    height: 257.5px;
+    width: 257.5px;
+    border-radius: 10px;
+}
+.textProduct{
+    color: rgb(60, 60, 60);
+    font-size: 0.7rem;
+    text-align: center;
+    max-width: 16rem;
+}
+.priceProduct{
+    color: black;
+    font-size: 0.9rem;
+}
+.buttonProduct{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 1rem;
+}
+.custom-btn {
+    padding: 0.5rem;
+    appearance: none;
+    background: radial-gradient(circle, rgba(193,61,67,1) 0%, rgba(136,41,50,1) 100%);
+    border-radius: 10px;
+    border-bottom: 0.4rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+    width: 200px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.custom-btn:disabled {
+    pointer-events: none;
+}
+
+.btn-1:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.btn-1:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+@media(max-width: 600px){
+    .containerProduct{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .bodyProduct{
+        width: 50%;
+        margin: 0;
+        padding: 0rem;
+        display: block;
+    }
+    .imgProduct {
+        width: 50%;
+    }
+    .imgProduct img{
+        display: flex;
+        align-items: center;
+    }
+    .textProduct{
+        text-align: center;
+        margin-right: 0.5rem;
+    }
+    
+}

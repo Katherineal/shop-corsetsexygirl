@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sectionHeader{
+    width: 100%;
+    background: radial-gradient(circle, rgba(193,61,67,1) 0%, rgba(136,41,50,1) 100%);
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.boxHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+.logo{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+}
