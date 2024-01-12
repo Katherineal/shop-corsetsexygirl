@@ -43,7 +43,7 @@ const Footer=()=> {
             </div>
         </div>
         <div class="containerFooter2">
-            <h5>COPYRIGHT © 2023 CorsetSexyGirl</h5>   
+            <h5>COPYRIGHT © 2024 CorsetSexyGirl</h5>   
         </div>
     </section>
 );

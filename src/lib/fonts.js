@@ -1,6 +1,6 @@
-import {  Poppins } from "next/font/google"
+import {  Nunito_Sans } from "next/font/google"
 
-export const Font = Poppins({
+export const Font = Nunito_Sans({
     subsets: ["latin-ext"],
     weight: "400",
 })

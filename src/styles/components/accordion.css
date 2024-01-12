@@ -1,0 +1,42 @@
+.Accordion {
+    padding: 0 3rem 1rem; 
+}
+
+.AccordionItem { 
+    color: rgba(193,61,67,1);;
+    margin-bottom: 5px;
+    padding: 0.5rem 0;
+}
+.AccordionItemTitle {
+    gap: 1rem;
+    cursor: pointer;
+    font-size: 18px; 
+}
+.AccordionItemContent {
+    padding: 10px;
+    display: none;
+    font-size: 18px; 
+}
+.AccordionItemContent p{
+    color: #666666;
+    font-size: 20px;
+}
+.AccordionItem.active .AccordionItemContent {
+    display: block;
+}
+
+.containerAccordion{
+    background-color: white;
+}
+
+.containerAccordion h1{
+    color: #000000E6;
+    font-size: 24px;
+    padding: 0 3rem 1rem;
+}
+
+@media(max-width: 580px){
+    .containerAccordion h1{
+        padding: 1rem 3rem 0 3rem ;
+    }
+}
